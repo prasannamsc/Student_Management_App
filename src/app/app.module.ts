@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddStudentsComponent } from './add-students/add-students.component';
+import { FormsModule } from '@angular/forms';
+import{ HttpClientModule} from'@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { UpdateStudentComponent } from './update-student/update-student.component';
+import { DetailsStudentComponent } from './details-student/details-student.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddStudentsComponent,
+    NavbarComponent,
+    StudentListComponent,
+    UpdateStudentComponent,
+    DetailsStudentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

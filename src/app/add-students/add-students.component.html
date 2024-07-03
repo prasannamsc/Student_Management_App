@@ -1,0 +1,27 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Create New Students</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>studentName</label>
+      <input type="text" class="form-control" id="studentName" name="studentName" [(ngModel)]="student.studentName">
+
+    </div>
+    <div class="form-group">
+
+      <label>registerNo</label>
+         <input type="text" class="form-control" id="registerNo" name="registerNo" [(ngModel)]="student.registerNo">
+
+    </div>
+    <div class="form-group">
+      <label>EmailId</label>
+       <input type="text" class="form-control" id="emailId" name="emailId" [(ngModel)]="student.emailId">
+
+    </div>
+    <div class="form-group">
+      <label>contactNo</label>
+     <input  type="text" class="form-control" id="contactNo" name="contactNo" [(ngModel)]="student.contactNo">
+
+    </div>
+    <button class="btn btn-success " type="submit"> Submit</button>
+  </form>
+</div>
